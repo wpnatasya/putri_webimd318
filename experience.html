@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>𝑬𝒙𝒑𝒆𝒓𝒊𝒆𝒏𝒄𝒆</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="experience">
+<header class="site-header">
+    <h1>PUTRI'S EXPERIENCE</h1>
+</header>
+
+<nav class="navbar">
+    <a href="index.html" class="active">Home</a>
+    <a href="biodata.html" class="active">Biodata</a>
+    <a href="experience.html" class="active">Experience</a>
+    <a href="education.html" class="active">Education</a>
+    <a href="family.html" class="active">Family</a>
+    <a href="gallery.html" class="active">Gallery</a>
+</nav>
+
+
+<main class="main-content">
+    <div class="card">
+        <h2>My Experiences</h2>
+        <p>
+            This section <strong>highlights</strong> my hands-on experience gained through internship training and event involvement, where I developed <strong>practical skills, leadership abilities, and professional work ethics</strong>in real-world settings.
+        </p>
+    </div>
+</main>
+
+<div class="experience-cards">
+
+    <div class="exp-card">
+      <img src="image/experience_1.jpeg" alt="Experience 1" title="Internship">
+        <p>During my <strong>internship</strong>, I gained hands-on experience in a real working environment, allowing me to apply theoretical knowledge while developing professional skills such as teamwork, communication, and time management.I underwent my internship at the Library of University of Cyberjaya for 2 months.</p>
+        <p><a href="https://cyberjaya.edu.my/campus-life/library" target="_blank" >Visit Library of University of Cyberjaya</a></p>
+    </div>
+
+    <div class="exp-card">
+        <img src="image/experience_3.jpeg" alt="Experience 2">
+        <p>I have experience working as a <strong>freelance writer</strong> and <strong>graphic designer</strong>, where I create engaging written content and visually appealing designs based on client needs.This experience helped me strengthen my creativity, adaptability, and attention to detail while working independently and handling multiple tasks professionally.</p>
+    </div>
+
+    <div class="exp-card">
+        <img src="image/experience_2.jpeg" alt="Experience 2" title="InfoFest">
+        <p><strong>As the Deputy Program Director</strong> for InfoFest, I gained valuable experience in event planning and coordination. This role strengthened my leadership, communication, and problem-solving skills while working closely with the team to ensure the program ran smoothly.</p>
+    </div>
+</div>
+
+<br>
+
+<button class="music-btn" onclick="toggleMusic()">
+    🎵 Play Music
+</button><br>
+
+<audio id="bgMusic">
+    <source src="audio/audio_3.mp3" type="audio/mp3">
+</audio>
+
+<script>
+function toggleMusic() {
+    var music = document.getElementById("bgMusic");
+    var btn = document.querySelector(".music-btn");
+
+    if (music.paused) {
+        music.play();
+        btn.innerHTML = "⏸️ Pause Music";
+    } else {
+        music.pause();
+        btn.innerHTML = "🎵 Play Music";
+    }
+}
+</script>
+
+<br>
+
+<footer class="footer">
+    <p>© Putri Natasya | Individual Website IMD 318</p>
+    <br>
+    <ul class="social-list">
+    <li class="item">
+        <a href="https://www.instagram.com/n.natacca?igsh=d2p3aWh2ZWl0ejZy">  
+            <i class="fa-brands fa-instagram icon"></i>
+        </a>          
+    </li>
+    <li class="item">
+        <a href="https://www.tiktok.com/@tasainthehouse?_r=1&_t=ZS-92Sz7HKtlZp">  
+            <i class="fa-brands fa-tiktok icon"></i>
+        </a>          
+    </li>
+    <li class="item">
+        <a href="https://wa.me/60187754524">  
+            <i class="fa-brands fa-whatsapp icon"></i>
+        </a>          
+    </li>
+</ul>
+</footer>
+</body>
+</html>

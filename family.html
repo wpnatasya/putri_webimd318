@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>𝑭𝒂𝒎𝒊𝒍𝒚</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="family">
+<header class="site-header">
+    <h1> PUTRI'S FAMILY</h1>
+</header>
+
+<nav class="navbar">
+    <a href="index.html" class="active">Home</a>
+    <a href="biodata.html" class="active">Biodata</a>
+    <a href="experience.html" class="active">Experience</a>
+    <a href="education.html" class="active">Education</a>
+    <a href="family.html" class="active">Family</a>
+    <a href="gallery.html" class="active">Gallery</a>
+</nav>
+
+
+<main class="main-content">
+    <div class="card">
+        <h2>My Family 🤍</h2>
+        <p>
+             Family plays an important role in my life. They are my biggest support system and always encourage me to do my best in everything I do.
+        </p>
+    </div>
+</main>
+
+<div class="family-card-table">
+<table style="width: 100%"><br>
+    <h2>Family Table</h2><br>
+    <tr>
+      <th style="width:30%">Name</th>
+      <th style="width:15%">Relation</th>
+      <th style="width:35%">Picture</th>
+      <th style="width:20%">Description</th>
+    </tr>
+
+    <tr>
+      <td>Wan Hasimi Bin Wan Hassan</td>
+      <td>Father</td>
+      <td><img src="image/papa.jpeg" style="height: 135px;" title="Papa"></td>
+      <td>Provides guidance and support</td>
+    </tr>
+      <td>Nurmalahanum Binti Md. Yatim</td>
+      <td>Mother</td>
+      <td><img src="image/mama.jpeg" style="height: 135px;" title="Mama"></td>
+      <td>Source of love and motivation</td>
+    </tr>
+    <tr>
+      <td>Wan Putri Safira Binti Wan Hasaimi</td>
+      <td>Sister</td>
+      <td><img src="image/kakak.jpeg" style="height: 135px;" title="Kakak"></td>
+      <td>My closest Companion</td>
+    </tr>
+    <tr>
+      <td>Wan Putra Mikael Bin Wan Hasaimi</td>
+      <td>Brother</td>
+      <td><img src="image/kael.jpeg" style="height: 135px;" title="Kael"></td>
+      <td>My supportive and fun-loving little brother</td>
+    </tr>
+  </table>
+</div>
+
+<br>
+
+<h2 style="text-align: center;">Family Potrait</h2><br>
+
+<div class="experience-cards">
+
+    <div class="exp-card">
+    <div class="family-card">
+      <img src="image/family_1.jpeg" alt="Potrait 1" title=" Family Potrait 1">
+    </div>
+</div>
+
+<div class="exp-card">
+    <div class="family-card">
+      <img src="image/family_2.jpeg" alt="Potrait 2" title="Family Potrait 2">
+    </div>
+</div>
+
+<div class="exp-card">
+    <div class="family-card">
+      <img src="image/family_3.jpeg" alt="Potrait 3" title="Family Potrait 3">
+    </div>
+  </div>
+</div>
+
+<br>
+
+<button class="music-btn" onclick="toggleMusic()">
+    🎵 Play Music
+</button><br>
+
+<audio id="bgMusic">
+    <source src="audio/audio_5.mp3" type="audio/mp3">
+</audio>
+
+<script>
+function toggleMusic() {
+    var music = document.getElementById("bgMusic");
+    var btn = document.querySelector(".music-btn");
+
+    if (music.paused) {
+        music.play();
+        btn.innerHTML = "⏸️ Pause Music";
+    } else {
+        music.pause();
+        btn.innerHTML = "🎵 Play Music";
+    }
+}
+</script>
+
+<br>
+
+<footer class="footer">
+    <p>© Putri Natasya | Individual Website IMD 318</p>
+    <br>
+    <ul class="social-list">
+    <li class="item">
+        <a href="https://www.instagram.com/n.natacca?igsh=d2p3aWh2ZWl0ejZy">  
+            <i class="fa-brands fa-instagram icon"></i>
+        </a>          
+    </li>
+    <li class="item">
+        <a href="https://www.tiktok.com/@tasainthehouse?_r=1&_t=ZS-92Sz7HKtlZp">  
+            <i class="fa-brands fa-tiktok icon"></i>
+        </a>          
+    </li>
+    <li class="item">
+        <a href="https://wa.me/60187754524">  
+            <i class="fa-brands fa-whatsapp icon"></i>
+        </a>          
+    </li>
+</ul>
+</footer>
+</body>
+</html>

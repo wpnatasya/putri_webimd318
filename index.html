@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>𝑰𝒏𝒅𝒆𝒙</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body class="home">
+<header class="site-header">
+    <h1>WELCOME TO PUTRI PERSONAL WEBSITE</h1>
+</header>
+
+<nav class="navbar">
+    <a href="index.html" class="active">Home</a>
+    <a href="biodata.html" class="active">Biodata</a>
+    <a href="experience.html" class="active">Experience</a>
+    <a href="education.html" class="active">Education</a>
+    <a href="family.html" class="active">Family</a>
+    <a href="gallery.html" class="active">Gallery</a>
+</nav>
+
+<iframe src="https://free.timeanddate.com/clock/ia8bavdd/n122/tlmy40/fs20/fc7b3f00/tct/pct/ftbi/th1" frameborder="0" width="82" height="25" allowtransparency="true"></iframe>
+
+<main class="main-content">
+    <div class="card">
+        <h2>Welcome to My Personal Website !</h2>
+        <p>
+            This website is a showcase of my <strong> personal and professional journey</strong>. Here, you can explore my <abbr title="Biodata">biodata</abbr>, 
+            <abbr title="Experience">experience</abbr>, <abbr title="Education">education</abbr>, <abbr title="Family">family</abbr>, and <abbr title="Gallery">gallery</abbr>.This project has been created as part of the <i><sub>IMD318</sub> assignment</i>.
+        </p>
+        <p>
+            Feel free to browse and get to know me better!
+        </p>
+    </div>
+</main>
+
+<section class="quick-order-section">
+    <div class="quick-order-wrapper">
+
+        <h3>⋆˙⟡♡ Collection of Gifs ⋆˙⟡♡</h3>
+
+        <div class="quick-order-container" id="quickScroll">
+
+            <div class="quick-card">
+                <img src="animation/gif_3.gif" alt="Animated image of keyboard">
+            </div>
+
+            <div class="quick-card">
+                <img src="animation/gif_4.gif" alt="Animated image of putri">
+            </div>
+
+            <div class="quick-card">
+                <img src="animation/gif_5.gif" alt="Animated image of putri">
+            </div>
+
+            <div class="quick-card">
+                <img src="animation/gif_7.gif" alt="Animated image of putri">
+            </div>
+
+            <div class="quick-card">
+                <img src="animation/gif_6.gif" alt="Animated image of putri">
+            </div>
+
+            <div class="quick-card">
+                <img src="animation/gif_8.gif" alt="Animated image of putri">
+            </div>
+
+        </div>
+
+        <div class="scroll-progress">
+            <div class="scroll-progress-fill" id="progressFill"></div>
+
+        </div>
+
+    </div>
+</section>
+
+<br>
+
+<button class="music-btn" onclick="toggleMusic()">
+    🎵 Play Music
+</button><br>
+
+<audio loop id="bgMusic">
+    <source src="audio/audio_2.mp3" type="audio/mp3">
+</audio>
+
+<script>
+function toggleMusic() {
+    var music = document.getElementById("bgMusic");
+    var btn = document.querySelector(".music-btn");
+
+    if (music.paused) {
+        music.play();
+        btn.innerHTML = "⏸️ Pause Music";
+    } else {
+        music.pause();
+        btn.innerHTML = "🎵 Play Music";
+    }
+}
+</script>
+
+<script>
+const quickScroll = document.getElementById("quickScroll");
+const progressFill = document.getElementById("progressFill");
+
+function updateProgress() {
+    const maxScroll = quickScroll.scrollWidth - quickScroll.clientWidth;
+    const scrollPercentage = (quickScroll.scrollLeft / maxScroll) * 100;
+    progressFill.style.width = scrollPercentage + "%";
+}
+
+quickScroll.addEventListener("scroll", updateProgress);
+</script>
+
+
+<div id="customAlert" class="alert-overlay">
+    <div class="alert-box">
+        <h2>Welcome To Putri's Personal Website</h2>
+        <button id="alertOk" class="alert-btn">Close</button>
+    </div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const alertBox = document.getElementById("customAlert");
+    const btn = document.getElementById("alertOk");
+
+    
+    alertBox.classList.add("show");
+    document.body.style.overflow = "hidden"; 
+
+    btn.addEventListener("click", function() {
+        alertBox.classList.remove("show");
+        document.body.style.overflow = "auto"; 
+    });
+});
+</script>
+
+
+<br> 
+
+<footer class="footer">
+    <p>© Putri Natasya | Individual Website IMD 318</p>
+    <br>
+    <ul class="social-list">
+    <li class="item">
+        <a href="https://www.instagram.com/n.natacca?igsh=d2p3aWh2ZWl0ejZy">  
+            <i class="fa-brands fa-instagram icon"></i>
+        </a>          
+    </li>
+    <li class="item">
+        <a href="https://www.tiktok.com/@tasainthehouse?_r=1&_t=ZS-92Sz7HKtlZp">  
+            <i class="fa-brands fa-tiktok icon"></i>
+        </a>          
+    </li>
+    <li class="item">
+        <a href="https://wa.me/60187754524">  
+            <i class="fa-brands fa-whatsapp icon"></i>
+        </a>          
+    </li>
+</ul>
+</footer>
+</body>
+</html>
